@@ -41,7 +41,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
-    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -79,6 +79,14 @@
       <updated>1705539036605</updated>
       <workItem from="1705539038723" duration="3958000" />
       <workItem from="1705567560209" duration="641000" />
+      <workItem from="1706605989925" duration="691000" />
+      <workItem from="1706616416922" duration="215000" />
+      <workItem from="1706620457939" duration="41000" />
+      <workItem from="1706663590555" duration="30000" />
+      <workItem from="1706664225906" duration="85000" />
+      <workItem from="1706665815346" duration="6000" />
+      <workItem from="1706924699074" duration="2000" />
+      <workItem from="1707033063667" duration="43000" />
     </task>
     <servers />
   </component>

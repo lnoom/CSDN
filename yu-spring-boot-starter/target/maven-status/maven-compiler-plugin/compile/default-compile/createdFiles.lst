@@ -1,0 +1,3 @@
+com\yu\config\YuStarterAutoConfiguration.class
+com\yu\service\YuService.class
+com\yu\service\YuServiceImpl.class

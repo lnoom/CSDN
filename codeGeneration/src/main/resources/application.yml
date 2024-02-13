@@ -1,0 +1,13 @@
+spring:
+  datasource:
+    username: root
+    password: root
+    #?serverTimezone=UTC解决时区的报错
+    url: jdbc:mysql://localhost:3306/mybatis01
+    driver-class-name: com.mysql.jdbc.Driver
+
+
+ucode:
+  code:
+#    project-dir:  项目前缀
+    package-name: 'com.yu' #包名

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="lombok-JSR269" options="-bootclasspath &quot;$PROJECT_DIR$/../../Program Files/java/jdk1.8.0_131/jre/lib/rt.jar;$PROJECT_DIR$/../../Program Files/java/jdk1.8.0_131/jre/lib/jce.jar;$PROJECT_DIR$/../../Program Files/java/jdk1.8.0_131/jre/../lib/tools.jar&quot; -parameters -proc:none -XDignore.symbol.file" />
+    </option>
+  </component>
+</project>

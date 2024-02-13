@@ -1,0 +1,9 @@
+qiniu:
+  # 配置accessKey
+  accessKey: VjaQCuRExnOvumJtLwxcK9TgHQZfGC40zj_JhXOs
+  # 配置secretKey
+  secretKey: sha3W9G2VkRsPv9nH32kDgX4FxWIrZoO6cM_LMYt
+  # 配置空间名称
+  bucket: ngro
+  # 配置域名
+  domain: s8ddw4ozc.hn-bkt.clouddn.com

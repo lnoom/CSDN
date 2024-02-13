@@ -1,0 +1,37 @@
+# 输出到控制台的配置
+#log:
+#  path: /tmp/log
+#logging:
+#  pattern:
+#    # 输出格式配置
+#    console: ' %d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n'
+#  logback:
+#    rollingpolicy:
+#      file-name-pattern: ${log.path}/奇遇少年-%d{yyyy-MM-dd}.%i.gz
+#      max-file-size: 10MB
+#      max-history: 6
+#  file:
+#    name: ${log.path}/yu.log
+
+
+
+#  level:
+#    root: info
+#    com.example.demo: DEBUG
+# 输出到文件的配置
+#  file.name: /var/log/myapp.log
+
+#    path: /var/log/myapp.log
+#      # 按日期拆分
+#    rollingPolicy: time
+#      # 每天产生一个日志文件
+#    fileNamePattern: /var/log/myapp-%d{yyyy-MM-dd}.log
+#      # 最多保存的日志文件个数
+#    maxHistory: 7
+#
+
+spring:
+  profiles:
+    active: pro
+logging:
+  config: classpath:yu.xml #自定义的配置文件名

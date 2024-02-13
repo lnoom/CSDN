@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>导入excel的主页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        .container-fluid {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .form-control {
+            margin-right: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border: 1px solid #ccc;
+        }
+
+        img {
+            max-width: 60px;
+            max-height: 60px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>选择Excel文件导入到数据中</h1>
+            <form th:action="@{/user/import}" method="post" enctype="multipart/form-data" class="form-inline">
+                <div class="form-group">
+                    <input class="form-control" type="file" name="excelFile">
+                    <input type="submit" class="btn btn-danger" value="导入数据">
+                </div>
+            </form>
+        </div>
+        <div class="col-md-12">
+            <h1>显示导入数据列表</h1>
+            <table class="table table-bordered" >
+                <tr>
+                    <th>编号</th>
+                    <th>头像</th>
+                    <th>姓名</th>
+                    <th>生日</th>
+                    <th>爱好</th>
+                    <th>身份证号</th>
+                    <th>家庭住址</th>
+                </tr>
+                <tr th:each="user : ${users}">
+                    <td th:text="${user.id}"></td>
+                    <td><img th:src="${'/images/'+ user.photo}" height="60px" alt=""></td>
+                    <td th:text="${user.name}"></td>
+                    <td th:text="${#dates.format(user.bir,'yyyy-MM-dd')}"></td>
+                    <td th:text="${user.habbys}"></td>
+                    <td th:text="${user.cardno}"></td>
+                    <td th:text="${user.address}"></td>
+                </tr>
+            </table>
+
+            <hr>
+            <a th:href="@{/user/export}" class="btn btn-info">导出excel</a>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

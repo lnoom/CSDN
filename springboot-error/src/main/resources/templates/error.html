@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>自定义错误页面</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 48px;
+            color: #333;
+        }
+        p {
+            font-size: 24px;
+            color: #666;
+        }
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+<h1>发生错误！</h1>
+<p>请稍后重试或联系管理员。</p>
+<span th:text="${msg}"></span>
+</body>
+</html>
